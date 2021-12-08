@@ -1,0 +1,55 @@
+-- phpMyAdmin SQL Dump
+-- version 4.2.11
+-- http://www.phpmyadmin.net
+--
+-- Servidor: 127.0.0.1
+-- Tiempo de generación: 22-05-2018 a las 02:26:02
+-- Versión del servidor: 5.6.21
+-- Versión de PHP: 5.6.3
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+
+
+CREATE TABLE IF NOT EXISTS `operacion` (
+`Ope_id` int(8) NOT NULL,
+  `Ope_Fecha` date NOT NULL,
+  `Ope_Venta` int(11) DEFAULT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=latin1;
+
+
+INSERT INTO `operacion` (`Ope_id`, `Ope_Fecha`, `Ope_Venta`) VALUES
+(1, '2021-11-18', 85),
+(2, '2021-11-17', 25),
+(3, '2021-11-16', 63),
+(4, '2021-11-15', 15),
+(5, '2021-11-14', 90),
+(6, '2021-11-13', 70),
+(7, '2021-11-12', 36),
+(8, '2021-11-11', 45),
+(9, '2021-11-10', 80),
+(10, '2021-11-09', 50),
+(11, '2021-11-08', 30),
+(12, '2021-11-07', 60),
+(13, '2021-11-06', 25),
+(14, '2021-11-05', 15),
+(15, '2021-11-21', 45),
+(16, '2021-11-22', 65);
+
+
+ALTER TABLE `operacion`
+ ADD PRIMARY KEY (`Ope_id`);
+
+ALTER TABLE `operacion`
+MODIFY `Ope_id` int(8) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=17;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
